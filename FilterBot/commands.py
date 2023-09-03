@@ -49,7 +49,7 @@ async def aboutCMD(client: FilterBot, message: Message):
         await db.add_user(message.from_user.first_name, message.from_user.id)
 
     keyboard = [[ InlineKeyboardButton('Tutorial', url='https://youtu.be/vbloWcdxjxg'),
-                   InlineKeyboardButton('Repo', url='https://github.com/Learningbots79/BestFilterbot') ],
+                   InlineKeyboardButton('Repo', url='https://github.com/movie_file_20/BestFilterbot') ],
                 [ InlineKeyboardButton('Home', callback_data='main#start'),
                   InlineKeyboardButton('Help', callback_data='main#help') ]]
 
@@ -85,7 +85,7 @@ async def maincallback(client: FilterBot, message):
 
     elif type == "about":
         keyboard = [[ InlineKeyboardButton('Tutorial', url='https://youtu.be/vbloWcdxjxg'),
-                       InlineKeyboardButton('Repo', url='https://github.com/Learningbots79/BestFilterbot') ],
+                       InlineKeyboardButton('Repo', url='https://github.com/movie_file_20/BestFilterbot') ],
                     [ InlineKeyboardButton('Home', callback_data='main#start'),
                       InlineKeyboardButton('Help', callback_data='main#help') ]]
         await message.message.edit(text=AboutTxT, reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True)
