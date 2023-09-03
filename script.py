@@ -38,4 +38,4 @@ Add me as admin in your group and start filtering :)
 """
 
 AboutTxT = """
-⭕️ Official Channel : @movie_file_20</b>
+⭕️ Official Channel : @movie_file_20
